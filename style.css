@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+}
+
+.content {
+  flex: 1; /* This makes the content take up the remaining space */
+  padding: 20px; /* Adjust as needed */
+}
+
+.image {
+  flex-shrink: 0; /* This prevents the image from shrinking */
+  padding: 20px; /* Adjust as needed */
+}
+
+/* If you want to align the image to the right, you can use the following */
+.image {
+  order: 2; /* This changes the order of appearance, placing the image after the content */
+}
+
+.content {
+  order: 1; /* This keeps the content before the image */
+}
